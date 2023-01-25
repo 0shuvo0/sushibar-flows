@@ -13,7 +13,10 @@
             @click="placeOrder"
         >Place order</button>
     </div>
-    <OrderNotifyModal v-if="showOrderNotifyModal" />
+    <OrderNotifyModal
+     v-if="showOrderNotifyModal"
+     @close="showOrderNotifyModal = false"
+    />
 </template>
 
 <script>

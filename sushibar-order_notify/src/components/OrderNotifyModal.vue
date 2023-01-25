@@ -1,6 +1,7 @@
 <template>
     <div class="modal-wrapper">
         <div class="modal-content">
+            <i @click="$emit('close')" class="bi bi-x modal-close-btn"></i>
             <p class="title-text text-center">One last thing</p>
             <p class="order-notify-description">How should we notify you your order is ready to collect?</p>
             <div class="order-notify-methods-container">
